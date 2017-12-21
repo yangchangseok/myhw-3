@@ -12,10 +12,11 @@ print_block_list(/* arguments */) {
    while(cur)
    {
       printf("%d) size: %d | free %d\n", i, cur->size, cur->free);
-      if(print_flag && !cur->free)
+      if(print_flag && !cur->free )
         printf("%s\n", cur->data);
       cur = cur->next;
       i++;
    }
    printf("\n");
 }
+
